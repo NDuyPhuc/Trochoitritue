@@ -8,17 +8,6 @@ h1{
   display: flex;
   align-content: center;
   flex-wrap: wrap;
-<<<<<<< HEAD
   width: 500px;
   height: 1000px;
 }
-h1{
-  color: rgb(4, 8, 192);
-  width: 100%;
-  text-align: center;
-=======
-  width: 400px;
-  height: 1000px;
->>>>>>> 0cb76e73c53910872fdfa32d6aa547a89b2190fb
-}
-
