@@ -3,7 +3,11 @@
   display: flex;
   align-content: center;
   flex-wrap: wrap;
-  width: 400px;
-  height: 500px;
- 
+  width: 500px;
+  height: 1000px;
+}
+h1{
+  color: rgb(4, 8, 192);
+  width: 100%;
+  text-align: center;
 }

@@ -2,18 +2,26 @@ document.addEventListener('DOMContentLoaded', () => {
     let audioClick = new Audio("sound/Click.mp3");
   //card options
   const cardArray = [
-    // {
-    //   name: 'ce-crea',
-    //   img: 'images/ice-cream.png'
-    // },
-    // {
-    //   name: 'pizz',
-    //   img: 'images/pizza.png'
-    // },
-    // {
-    //   name: 'frie',
-    //   img: 'images/fries.png'
-    // },
+    {
+      name: 'NhuAnh1',
+      img: 'images/NhuAnh1.jpg'
+    },
+    {
+      name: 'Phat',
+      img: 'images/Phat.jpg'
+    },
+    {
+      name: 'NhuAnh',
+      img: 'images/NhuAnh.jpg'
+    },
+    {
+      name: 'Hoai Thu',
+      img: 'images/HoaiThu.jpg'
+    },
+    {
+      name: 'Trong',
+      img: 'images/CaoTrong1.jpg'
+    },
     {
       name: 'fries',
       img: 'images/ChauVanNghi.jpg'
@@ -22,10 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'cheeseburger',
       img: 'images/CaoTrong.jpg'
     },
-    // {
-    //   name: 'ice-crea',
-    //   img: 'images/hotdog.png'
-    // },
     {
       name: 'ice-cream',
       img: 'images/TrungHau.jpg'
@@ -42,18 +46,26 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'hotdog',
       img: 'images/DuyPhuc.jpg'
     },
-    // {
-    //   name: 'ce-crea',
-    //   img: 'images/ice-cream.png'
-    // },
-    // {
-    //   name: 'pizz',
-    //   img: 'images/pizza.png'
-    // },
-    // {
-    //   name: 'frie',
-    //   img: 'images/fries.png'
-    // },
+    {
+      name: 'NhuAnh1',
+      img: 'images/NhuAnh1.jpg'
+    },
+    {
+      name: 'Phat',
+      img: 'images/Phat.jpg'
+    },
+    {
+      name: 'NhuAnh',
+      img: 'images/NhuAnh.jpg'
+    },
+    {
+      name: 'Hoai Thu',
+      img: 'images/HoaiThu.jpg'
+    },
+    {
+      name: 'Trong',
+      img: 'images/CaoTrong1.jpg'
+    },
     {
       name: 'fries',
       img: 'images/ChauVanNghi.jpg'
@@ -62,10 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'cheeseburger',
       img: 'images/CaoTrong.jpg'
     },
-    // {
-    //   name: 'ice-crea',
-    //   img: 'images/hotdog.png'
-    // },
     {
       name: 'ice-cream',
       img: 'images/TrungHau.jpg'
@@ -86,7 +94,16 @@ document.addEventListener('DOMContentLoaded', () => {
   function soundClick() {
     audioClick.play();}
   cardArray.sort(() => 0.5 - Math.random())
+  let timeCount = 0;
+  setInterval(setTime, 1000);
+  function setTime() {
+    if (!isGameOver & isGamestart) {
+      ++timeCount;
+      document.getElementById("time-count").innerHTML = timeCount;
+      document.getElementById("ftime").value = timeCount;
 
+    }
+  }
   const grid = document.querySelector('.grid')
   const resultDisplay = document.querySelector('#result')
   let cardsChosen = []
@@ -130,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cardsChosenId = []
     resultDisplay.textContent = cardsWon.length
     if  (cardsWon.length === cardArray.length/2) {
-      resultDisplay.textContent = 'Congratulations! You found them all!'
+      resultDisplay.textContent = 'Không được nhấn 1 ảnh 2 lần đấu nhé!'
     }
   }
 
