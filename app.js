@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
   //card options
   const cardArray = [
     {
+      name: 'Xuyen1',
+      img: 'images/Xuyen1.jpg'  
+    },
+    {
       name: 'NhuAnh1',
       img: 'images/NhuAnh1.jpg'
     },
@@ -45,6 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       name: 'hotdog',
       img: 'images/DuyPhuc.jpg'
+    },
+    {
+      name: 'Xuyen1',
+      img: 'images/Xuyen1.jpg'  
     },
     {
       name: 'NhuAnh1',
