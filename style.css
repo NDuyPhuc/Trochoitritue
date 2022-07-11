@@ -1,3 +1,9 @@
+h1{
+  color: rgb(4, 8, 192);
+  font-size: 400px
+  width: 100%;
+  text-align: center;
+}
 .grid {
   margin: 0 auto;
   display: flex;
@@ -6,9 +12,4 @@
   width: 400px;
   height: 1000px;
 }
-h1{
-  color: rgb(4, 8, 192);
-  font-size: 400px
-  width: 100%;
-  text-align: center;
-}
+
