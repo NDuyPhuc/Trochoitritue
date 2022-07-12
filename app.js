@@ -1,7 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let audioClick = new Audio("sound/Click.mp3");
   //card options
   const cardArray = [
+    {
+      name: 'Quynh1',
+      img: 'images/Quynh1.jpg'  
+    },
+    {
+      name: '0btten',
+      img: 'images/Khongbtten.jpg'  
+    },
+    {
+      name: 'Quynh',
+      img: 'images/Quynh.jpg'  
+    },
+    {
+      name: 'Phamdang',
+      img: 'images/Phamdang.jpg'  
+    },
+    {
+      name: 'Phucthinh',
+      img: 'images/Phucthinh.jpg'  
+    },
     {
       name: 'Xuyen1',
       img: 'images/Xuyen1.jpg'  
@@ -51,6 +70,26 @@ document.addEventListener('DOMContentLoaded', () => {
       img: 'images/DuyPhuc.jpg'
     },
     {
+      name: 'Quynh1',
+      img: 'images/Quynh1.jpg'  
+    },
+    {
+      name: '0btten',
+      img: 'images/Khongbtten.jpg'  
+    },
+    {
+      name: 'Quynh',
+      img: 'images/Quynh.jpg'  
+    },
+    {
+      name: 'Phamdang',
+      img: 'images/Phamdang.jpg'  
+    },
+    {
+      name: 'Phucthinh',
+      img: 'images/Phucthinh.jpg'  
+    },
+    {
       name: 'Xuyen1',
       img: 'images/Xuyen1.jpg'  
     },
@@ -77,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       name: 'fries',
       img: 'images/ChauVanNghi.jpg'
-    },
+     },
     {
       name: 'cheeseburger',
       img: 'images/CaoTrong.jpg'
@@ -99,19 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
       img: 'images/DuyPhuc.jpg'
     }
   ]
-  function soundClick() {
-    audioClick.play();}
   cardArray.sort(() => 0.5 - Math.random())
-  let timeCount = 0;
-  setInterval(setTime, 1000);
-  function setTime() {
-    if (!isGameOver & isGamestart) {
-      ++timeCount;
-      document.getElementById("time-count").innerHTML = timeCount;
-      document.getElementById("ftime").value = timeCount;
-
-    }
-  }
   const grid = document.querySelector('.grid')
   const resultDisplay = document.querySelector('#result')
   let cardsChosen = []
@@ -133,7 +160,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('img')
     const optionOneId = cardsChosenId[0]
     const optionTwoId = cardsChosenId[1]
-    soundClick();
     if(optionOneId == optionTwoId) {
       cards[optionOneId].setAttribute('src', 'images/blank.png')
       cards[optionTwoId].setAttribute('src', 'images/blank.png')
