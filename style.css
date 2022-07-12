@@ -26,8 +26,12 @@ h1{
   align-content: center;
   width: center;
   height: center;
+<<<<<<< HEAD
   /* border: 5px solid #dcd6bc; */
   padding: 15px 0px;
+=======
+  padding: 12px 60px;
+>>>>>>> 3972380ff6725013cbf0de60781369832a5ed3e1
   display: block;
 }
 h3{
@@ -50,6 +54,7 @@ button{
   align-content: center;
   flex-wrap: wrap; 
   font-size: 20px;
+<<<<<<< HEAD
   text-decoration: none;
     list-style: none;
    font-weight:lighter;
@@ -63,4 +68,6 @@ button{
     border-radius: 10px;
     cursor: pointer;
     transition: 4s ease;
+=======
+>>>>>>> 3972380ff6725013cbf0de60781369832a5ed3e1
 }
