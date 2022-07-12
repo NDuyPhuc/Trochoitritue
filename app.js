@@ -41,10 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'Hoai Thu',
       img: 'images/HoaiThu.jpg'
     },
-    {
-      name: 'Trong',
-      img: 'images/CaoTrong1.jpg'
-    },
+//     {
+//       name: 'Trong',
+//       img: 'images/CaoTrong1.jpg'
+//     },
     {
       name: 'fries',
       img: 'images/ChauVanNghi.jpg'
@@ -109,10 +109,10 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'Hoai Thu',
       img: 'images/HoaiThu.jpg'
     },
-    {
-      name: 'Trong',
-      img: 'images/CaoTrong1.jpg'
-    },
+//     {
+//       name: 'Trong',
+//       img: 'images/CaoTrong1.jpg'
+//     },
     {
       name: 'fries',
       img: 'images/ChauVanNghi.jpg'
